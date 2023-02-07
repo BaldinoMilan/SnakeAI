@@ -12,17 +12,17 @@ Finally, the only package that the project use is pygame and use the standards m
 
 - neural_network.py : this file contains all the deep learning related stuff, it will be hard to explain concisely and may be hard to understand if not explained. So in the following, I will describe each class and explain what it does:
 
-Neural: represents a neural, but is only use for the calculations, they're not explicitly refered in the network. The 'bias' is a constant added to the input and the 'function' is the index of the function in the 'activate_functions' list (its done so that it's easy to apply randomness to it).
+  Neural: represents a neural, but is only use for the calculations, they're not explicitly refered in the network. The 'bias' is a constant added to the input and the 'function' is the index of the function in the 'activate_functions' list (its done so that it's easy to apply randomness to it).
 
-Node: it is the way that the network reference a neural. It contains the type of the neural (eather "input", "hidden" or "output") and its unique id. The id is the index of the neural in the list for inputs and outputs, and an id for hidden ones (its not correlated with the position in the list in this case).
+  Node: it is the way that the network reference a neural. It contains the type of the neural (eather "input", "hidden" or "output") and its unique id. The id is the index of the neural in the list for inputs and outputs, and an id for hidden ones (its not correlated with the position in the list in this case).
 
-Connexion: represents a connexion between two neurals, the weight is a float that has no maximum or minimum, it is the multiplier of the input data. The input and output members are nodes that the network will interact with.
+  Connexion: represents a connexion between two neurals, the weight is a float that has no maximum or minimum, it is the multiplier of the input data. The input and output members are nodes that the network will interact with.
 
-Network: references tree list of respectivly input neurals, hidden neurals, and output neurals. The node work as described with this lists. The network contains the connexions between the neurals. Before assigning data in inputs neurals out member, you have to make sure to use the 'reset' method. After that you can process the output neurals you want by passing a node to them as parameter. Then the majority of methods are helper ones for the network and the mutation ones. 
+  Network: references tree list of respectivly input neurals, hidden neurals, and output neurals. The node work as described with this lists. The network contains the connexions between the neurals. Before assigning data in inputs neurals out member, you have to make sure to use the 'reset' method. After that you can process the output neurals you want by passing a node to them as parameter. Then the majority of methods are helper ones for the network and the mutation ones. 
 
-Population: it is the way to apply reinforcement learning (it's not well implemented for the save of time but work kind of fine). It basicly find the best network for a number of tries.
+  Population: it is the way to apply reinforcement learning (it's not well implemented for the save of time but work kind of fine). It basicly find the best network for a number of tries.
 
-- main.py : Now the main file, there is nothing really special happening here. It's pretty straight forward so you should have now problem understand what's in there after understanding what's before.
+    - main.py : Now the main file, there is nothing really special happening here. It's pretty straight forward so you should have now problem understand what's in there after understanding what's before.
 
 # Performance
 So the main issue in this project is that I didn't wanted to use much time into this because it was a test(I wrote it in a week end), and now I can see the result. At the moment, the program work. But it doesn't seems like the AI is really learning much or even regressing and that's quite depressing but for me and what I intended to do, it's fine. I know there are many ways to optimise, but I feel confortable with this and the main problem is that it's unusual to me to code in python and quite frustrating to write classes (especially data classes like neurals/nodes or connexions). In the end, test this at your risk.

@@ -22,7 +22,7 @@ Finally, the only package that the project use is pygame and use the standards m
 
   Population: it is the way to apply reinforcement learning (it's not well implemented for the save of time but work kind of fine). It basicly find the best network for a number of tries.
 
-    - main.py : Now the main file, there is nothing really special happening here. It's pretty straight forward so you should have now problem understand what's in there after understanding what's before.
+- main.py : Now the main file, there is nothing really special happening here. It's pretty straight forward so you should have now problem understand what's in there after understanding what's before.
 
 # Performance
 So the main issue in this project is that I didn't wanted to use much time into this because it was a test(I wrote it in a week end), and now I can see the result. At the moment, the program work. But it doesn't seems like the AI is really learning much or even regressing and that's quite depressing but for me and what I intended to do, it's fine. I know there are many ways to optimise, but I feel confortable with this and the main problem is that it's unusual to me to code in python and quite frustrating to write classes (especially data classes like neurals/nodes or connexions). In the end, test this at your risk.
